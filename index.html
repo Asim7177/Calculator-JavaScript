@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            background: linear-gradient(90deg, rgba(64, 177, 21, 1) 14%, rgba(12, 210, 148, 1) 81%);
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        input::placeholder {
+            text-align: center;
+            font-size: 60px;
+            color: #e5e1e9;
+        }
+
+        input {
+            border-radius: 21px;
+            border: 5px solid #000;
+            font-size: 40px;
+            height: 110px;
+            width: 456px;
+            outline: none;
+            box-shadow: 2px 2px 10px #978fa0 inset, 3px 3px 10px #252a29, 3px 3px 10px #444a49;
+        }
+
+        button {
+            border-radius: 20px;
+            font-size: 40px;
+            background: #978fa0;
+            width: 102px;
+            height: 80px;
+            margin: 6px;
+        }
+
+        button:hover {
+            background-color: rgba(255, 255, 255, .8);
+        }
+
+        .calculator {
+            border: 4px solid #252a29;
+            background-color: #000000;
+            padding: 40px 23px 23px;
+            border-radius: 30px;
+            display: inline-block;
+
+        }
+
+        .mt {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<div class="container">
+    <!-- <h1>Calculator</h1> -->
+
+    <div class="calculator">
+        <input type="text" name="screen" id="screen" placeholder="Calculator" readonly>
+        <table class="mt">
+            <tr>
+                <td><button>C</button></td>
+                <td><button>Del</button></td>
+                <td><button>%</button></td>
+                <td><button>X</button></td>
+            </tr>
+            <tr>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+                <td><button>/</button></td>
+            </tr>
+            <tr>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+                <td><button>-</button></td>
+            </tr>
+            <tr>
+                <td><button>1</button></td>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+                <td><button>+</button></td>
+            </tr>
+            <tr>
+                <td><button>0</button></td>
+                <td><button>00</button></td>
+                <td><button>.</button></td>
+                <td><button>=</button></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+
+<script src="index.js"></script>
+
+</body>
+
+</html>
